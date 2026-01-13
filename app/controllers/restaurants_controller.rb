@@ -14,6 +14,7 @@ class RestaurantsController < ApplicationController
 
   # GET /restaurants/1
   def show
+    @restaurant = Restaurant.find(params[:id])
   end
 
   def chef
